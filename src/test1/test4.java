@@ -6,6 +6,10 @@ public class test4 {
         cat1.name = "🔅";
         cat1.age = 12;
         System.out.println(cat1.name +" "+ cat1.age);
+
+        System.out.println("tyhrdcrty与韩国黄金矿工预估 就有户口挂靠");
+
+
     }
 
 
