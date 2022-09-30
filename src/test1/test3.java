@@ -10,6 +10,7 @@ public class test3 {
         String s2 = new String("aaa");
         s2 = "adfcsaa";
         s2 = "afsdasdgsdfas";
+
         //System.out.println(s2);
 
         //初始化一个空的StringBuffer对象;
