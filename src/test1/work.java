@@ -116,6 +116,16 @@ for是对的  简单的加法我没想到，我就想到用数组，存放每个
                 char aaUpperCase = Character.toUpperCase(aa);
 
                 System.out.print(aaUpperCase);
+
+                /*char bb = 'b';
+                //返回转换后字符的大写形式
+                System.out.println(Character.toUpperCase(bb));
+
+                int b = bb+32;
+                char BB = (char) b;
+                System.out.println(BB);
+*/
+
             }else {
                 System.out.print(a.charAt(i));
             }
