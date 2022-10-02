@@ -128,6 +128,7 @@ for是对的  简单的加法我没想到，我就想到用数组，存放每个
 
             }else {
                 System.out.print(a.charAt(i));
+                System.out.println("受到广泛苦逼");
             }
 
 
