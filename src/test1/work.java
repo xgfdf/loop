@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 
 public class work {
     public static void main(String[] args) {
-        f5();
+        f7();
 
     }
     public static void f1(){
@@ -129,7 +129,7 @@ for是对的  简单的加法我没想到，我就想到用数组，存放每个
 
             }else {
                 System.out.print(a.charAt(i));
-                System.out.println("受到广泛苦逼");
+
             }
 
 
@@ -137,8 +137,36 @@ for是对的  简单的加法我没想到，我就想到用数组，存放每个
         }
 
     }
+    /*数组A = {1,4,3,5,1,8,6,2,7,3,8,2}
+    找出数组A中，不去重的最小的4个数。
+    如：{1，2，1，2，3，4}这6个数字，则最小的2个数字是1,2(任意顺序皆可)。*/
+
     public static void f7(){
+
         int[] A = {1,4,3,5,1,8,6,2,7,3,8,2};
+
+        int min = A[0];
+        for (int i = 0; i < A.length; i++) {
+            for (int j = 0; j < A.length-i-1; j++) {
+                if (A[j+1]<A[j]){
+                    A[j] = A[j+1] ^ A[j];
+                    A[j+1] = A[j+1] ^ A[j];
+                    A[j] = A[j+1] ^ A[j];
+
+                }
+
+            }
+
+        }
+        for (int i = 0; i < 4; i++) {
+
+            System.out.println(A[i]);
+            if (A[i+1] == A[i]){
+
+
+            }
+
+        }
 
     }
 }
